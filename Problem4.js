@@ -26,7 +26,7 @@ function filterOddIndexedElements(arr) {
   
     let oddIndexedArray = [];
     for (let i = 0; i < arr.length; i++) {
-      if (i % 2 === 0) {
+      if (i % 2 !== 0 || i == 0) {
         oddIndexedArray.push(arr[i]);
       }
     }
